@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-        });
-    }
+    setTimeout(() => {
+        document.querySelector("nav").style.opacity = "1";
+        document.querySelector(".hero-content").style.opacity = "1";
+        document.querySelector("footer").style.opacity = "1";
+    }, 200);
 });
