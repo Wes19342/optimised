@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Limitless SMP - Minecraft Server</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Minecraft&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <nav>
-            <div class="logo">The Limitless SMP</div>
+            <div class="logo">
+                <h1>The Limitless SMP</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -22,25 +24,260 @@
                 <li><a href="#seasons">Seasons</a></li>
                 <li><a href="#join" class="join-btn">Join Us</a></li>
             </ul>
-            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>The Limitless SMP</h1>
+            <h1 class="minecraft-font">The Limitless SMP</h1>
             <p>A Minecraft survival multiplayer experience</p>
             <div class="hero-buttons">
                 <a href="#join" class="btn primary-btn">Join Now</a>
                 <a href="#features" class="btn secondary-btn">Learn More</a>
             </div>
         </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Server</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to The Limitless SMP</h3>
+                    <p>The Limitless SMP is a community-focused Minecraft server offering an enhanced vanilla experience. Our server provides a friendly environment where players can build, explore, and create without boundaries.</p>
+                    <p>Founded in 2025, we've grown into a thriving community of builders, explorers, and adventurers who share a passion for Minecraft.</p>
+                    <div class="server-stats">
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>10+</span>
+                            <p>Active Players</p>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>80%</span>
+                            <p>Uptime</p>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-map"></i>
+                            <span>3k x 3k</span>
+                            <p>World Size</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Server Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Good Performance</h3>
+                    <p>Enjoy almost lag-free gameplay with our optimized server infrastructure and regular maintenance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Grief Protection</h3>
+                    <p>Players are not allowed to grief your farms that you have spent long time building.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Active Community</h3>
+                    <p>Join a friendly and helpful community of players who share your passion for Minecraft.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Small Custom Plugins</h3>
+                    <p>Experience a tiny tweak gameplay with our carefully selected custom plugins that enhance vanilla Minecraft.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3>Regular Events</h3>
+                    <p>Constant new seasons and the server keeps up with the latest updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Dedicated Support</h3>
+                    <p>Our team is always available to help with any issues or questions you might have.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="join">
+        <div class="container">
+            <h2 class="section-title">Join Our Server</h2>
+            <div class="join-content">
+                <div class="server-info">
+                    <h3>Server Address</h3>
+                    <div class="server-address">
+                        <span id="server-ip">play.limitlesssmp.com</span>
+                        <button id="copy-ip" class="btn copy-btn">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="server-version">
+                        <h4>Supported Versions</h4>
+                        <p>Minecraft Java Edition 1.21.4</p>
+                    </div>
+                    <div class="discord">
+                        <h4>Join Our Discord</h4>
+                        <p class="discord-description">Our server heavily depends on our Discord community and the server.</p>
+                        <a href="https://discord.com/invite/te72qdfgGB" class="btn discord-btn">
+                            <i class="fab fa-discord"></i> Discord Server
+                        </a>
+                    </div>
+                </div>
+                <div class="join-steps">
+                    <h3>How to Join</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Launch Minecraft</h4>
+                                <p>Open your Minecraft Java Edition client (version 1.21.4)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Go to Multiplayer</h4>
+                                <p>Click on "Multiplayer" from the main menu</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Add Server</h4>
+                                <p>Click "Add Server" and enter our server address</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h4>Join & Play</h4>
+                                <p>Select our server and click "Join Server"</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="seasons" class="seasons">
+        <div class="container">
+            <h2 class="section-title">Server Seasons</h2>
+            <div class="seasons-content">
+                <div class="season-info">
+                    <h3>What are Seasons?</h3>
+                    <p>The Limitless SMP runs on a seasonal model, where each season brings a fresh world, new features, and exciting opportunities for players. Seasons typically last 3-6 weeks, allowing everyone to experience the thrill of starting fresh while implementing community feedback from previous seasons.</p>
+                </div>
+                
+                <div class="season-current">
+                    <div class="season-badge">
+                        <span>NEW</span>
+                    </div>
+                    <h3>Season 3 is LIVE!</h3>
+                    <div class="season-details">
+                        <div class="season-image">
+                            <img src="images/7.png" alt="Season 3 Landscape">
+                        </div>
+                        <div class="season-text">
+                            <h4>Welcome to Season 3</h4>
+                            <p>Our newest season brings exciting changes and improvements based on community feedback:</p>
+                            <ul class="season-features">
+                                <li><i class="fas fa-check"></i> Updated to Minecraft 1.21.4</li>
+                                <li><i class="fas fa-check"></i> Expanded world border (3k x 3k)</li>
+                                <li><i class="fas fa-check"></i> Enhanced security</li>
+                                <li><i class="fas fa-check"></i> Enhanced plugins</li>
+                            </ul>
+                            <p class="season-join">Season 3 started on April 5, 2025. Join now to claim the team and be part of our growing community from the beginning!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="season-timeline">
+                    <h3>Season History</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Season 1</h4>
+                                <p>Our inaugural season launched in January 2025, focusing on establishing our community and core gameplay experience.</p>
+                                <span class="timeline-date">January - February 2025</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Season 2</h4>
+                                <p>Season 2 expanded our world and introduced custom plugins based on player feedback from Season 1.</p>
+                                <span class="timeline-date">February - April 2025</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item active">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Season 3</h4>
+                                <p>Our current season features the latest Minecraft version with enhanced gameplay and community features.</p>
+                                <span class="timeline-date">April 2025 - Present</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 The Limitless SMP. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="minecraft-font">The Limitless SMP</h2>
+                    <p>A Minecraft survival experience</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#join">Join Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>  2025 The Limitless SMP. All rights reserved.</p>
+                <p>Not affiliated with Mojang Studios or Microsoft.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
+
+</body></html>
