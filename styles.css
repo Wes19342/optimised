@@ -1,3 +1,110 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('your-image.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #27ae60;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
 /* Fade-in Animation */
 @keyframes fadeIn {
     from {
@@ -8,24 +115,4 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Apply animation to hero content */
-.hero-content {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 0.5s;
-}
-
-/* Apply animation to navigation */
-nav {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-}
-
-/* Apply animation to footer */
-footer {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 1s;
 }
